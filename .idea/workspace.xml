@@ -5,201 +5,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="433aa207-0956-4ea8-a317-60357fe7df59" name="Changes" comment="1">
-      <change afterPath="$PROJECT_DIR$/Java_Start/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java_Start/src/main/Test/CalculatorTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java_Start/src/main/Test/HomeWork6Tests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java_Start/src/main/java/ru/gb/Bootcamp/Algorithms/AlgorithmApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java_Start/src/main/java/ru/gb/Bootcamp/Algorithms/Armstrong/ArmstrongApp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java_Start/src/main/java/ru/gb/Bootcamp/Algorithms/Armstrong/ArrayAlgorithm.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java_Start/src/main/java/ru/gb/Bootcamp/Algorithms/Armstrong/BasicAlgorithm.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java_Start/src/main/java/ru/gb/Bootcamp/Algorithms/Armstrong/IntAlgorithm.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java_Start/src/main/java/ru/gb/Bootcamp/Algorithms/Armstrong/Logger.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java_Start/src/main/java/ru/gb/Bootcamp/Algorithms/Armstrong/Util.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java_Start/src/main/java/ru/gb/Bootcamp/Algorithms/BinarySearch.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java_Start/src/main/java/ru/gb/Bootcamp/Algorithms/BinaryTree.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java_Start/src/main/java/ru/gb/Bootcamp/Algorithms/BubbleSort.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java_Start/src/main/java/ru/gb/Bootcamp/Algorithms/DirectSort.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java_Start/src/main/java/ru/gb/Bootcamp/Algorithms/QuickSort.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java_Start/src/main/java/ru/gb/Bootcamp/Algorithms/RedBlackTree.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java_Start/src/main/java/ru/gb/Bootcamp/Hash/HashTable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java_Start/src/main/java/ru/gb/Bootcamp/Hash/Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java_Start/src/main/java/ru/gb/Bootcamp/Hash/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java_Start/src/main/java/ru/gb/Bootcamp/Patterns/Builder/Director.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java_Start/src/main/java/ru/gb/Bootcamp/Patterns/Builder/HeavyIndustrialUnitBuilder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java_Start/src/main/java/ru/gb/Bootcamp/Patterns/Builder/IndustrialBuilder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java_Start/src/main/java/ru/gb/Bootcamp/Patterns/Builder/IndustrialUnit.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java_Start/src/main/java/ru/gb/Bootcamp/Patterns/Builder/LightIndustrialUnitBuilder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java_Start/src/main/java/ru/gb/Bootcamp/Patterns/Builder/OperatingStatus.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java_Start/src/main/java/ru/gb/Bootcamp/Patterns/Command/Command.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java_Start/src/main/java/ru/gb/Bootcamp/Patterns/Command/CommandSequence.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java_Start/src/main/java/ru/gb/Bootcamp/Patterns/Command/Commands/MakeLoudMusicBox.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java_Start/src/main/java/ru/gb/Bootcamp/Patterns/Command/Commands/TurnOffLight.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java_Start/src/main/java/ru/gb/Bootcamp/Patterns/Command/Commands/TurnOffMusicBox.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java_Start/src/main/java/ru/gb/Bootcamp/Patterns/Command/Commands/TurnOnLight.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java_Start/src/main/java/ru/gb/Bootcamp/Patterns/Command/Commands/TurnOnMusicBox.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java_Start/src/main/java/ru/gb/Bootcamp/Patterns/Command/Light.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java_Start/src/main/java/ru/gb/Bootcamp/Patterns/Command/MusicBox.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java_Start/src/main/java/ru/gb/Bootcamp/Patterns/Command/MyRemoteControl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java_Start/src/main/java/ru/gb/Bootcamp/Patterns/EasyBuilder/Report.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java_Start/src/main/java/ru/gb/Bootcamp/Patterns/Factory/GroceryStore.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java_Start/src/main/java/ru/gb/Bootcamp/Patterns/Factory/GroceryStoreFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java_Start/src/main/java/ru/gb/Bootcamp/Patterns/Factory/Store.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java_Start/src/main/java/ru/gb/Bootcamp/Patterns/Factory/StoreFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java_Start/src/main/java/ru/gb/Bootcamp/Patterns/Factory/WearStore.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java_Start/src/main/java/ru/gb/Bootcamp/Patterns/Factory/WearStoreFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java_Start/src/main/java/ru/gb/Bootcamp/Patterns/Iterator/Collection.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java_Start/src/main/java/ru/gb/Bootcamp/Patterns/Iterator/MarketStore.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java_Start/src/main/java/ru/gb/Bootcamp/Patterns/Iterator/MyIterator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java_Start/src/main/java/ru/gb/Bootcamp/Patterns/Mediator/ConcreteMediator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java_Start/src/main/java/ru/gb/Bootcamp/Patterns/Mediator/ConcreteTaxi.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java_Start/src/main/java/ru/gb/Bootcamp/Patterns/Mediator/Mediator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java_Start/src/main/java/ru/gb/Bootcamp/Patterns/Mediator/Taxi.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java_Start/src/main/java/ru/gb/Bootcamp/Patterns/Mediator/Trip.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java_Start/src/main/java/ru/gb/Bootcamp/Patterns/Observer/Document.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java_Start/src/main/java/ru/gb/Bootcamp/Patterns/Observer/Person.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java_Start/src/main/java/ru/gb/Bootcamp/Patterns/Observer/Subscriber.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java_Start/src/main/java/ru/gb/Bootcamp/Patterns/Patterns.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java_Start/src/main/java/ru/gb/Bootcamp/Patterns/Singleton/LimitedMultiton.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java_Start/src/main/java/ru/gb/Bootcamp/Patterns/Singleton/Multiton.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java_Start/src/main/java/ru/gb/Bootcamp/Patterns/Singleton/Singleton.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java_Start/src/main/java/ru/gb/Bootcamp/Patterns/State/DialingState.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java_Start/src/main/java/ru/gb/Bootcamp/Patterns/State/EnteringNumberState.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java_Start/src/main/java/ru/gb/Bootcamp/Patterns/State/Phone.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java_Start/src/main/java/ru/gb/Bootcamp/Patterns/State/State.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java_Start/src/main/java/ru/gb/Bootcamp/Patterns/State/TalkingState.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java_Start/src/main/java/ru/gb/Bootcamp/Patterns/State/WaitingState.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java_Start/src/main/java/ru/gb/Bootcamp/Patterns/Strategy/Discountable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java_Start/src/main/java/ru/gb/Bootcamp/Patterns/Strategy/FixedDiscount.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java_Start/src/main/java/ru/gb/Bootcamp/Patterns/Strategy/PercentDiscount.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java_Start/src/main/java/ru/gb/Bootcamp/Patterns/Strategy/Product.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java_Start/src/main/java/ru/gb/Bootcamp/Patterns/Strategy/ShoppingCart.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java_Start/src/main/java/ru/gb/Bootcamp/Patterns/Visitor/Person.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java_Start/src/main/java/ru/gb/Bootcamp/Patterns/Visitor/PersonVisitor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java_Start/src/main/java/ru/gb/Bootcamp/Patterns/Visitor/School.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java_Start/src/main/java/ru/gb/Bootcamp/Patterns/Visitor/Student.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java_Start/src/main/java/ru/gb/Bootcamp/Patterns/Visitor/Teacher.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java_Start/src/main/java/ru/gb/Bootcamp/Patterns/Visitor/TextPersonVisitor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java_Start/src/main/java/ru/gb/Bootcamp/Patterns/Visitor/XmlPersonVisitor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java_Start/src/main/java/ru/gb/Bootcamp/Patterns/chainsOfResponsibility/B2BTransferMiddleware.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java_Start/src/main/java/ru/gb/Bootcamp/Patterns/chainsOfResponsibility/B2PTransferMiddleware.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java_Start/src/main/java/ru/gb/Bootcamp/Patterns/chainsOfResponsibility/CheckFraudExternalMiddleware.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java_Start/src/main/java/ru/gb/Bootcamp/Patterns/chainsOfResponsibility/CheckFraudLocalMiddleware.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java_Start/src/main/java/ru/gb/Bootcamp/Patterns/chainsOfResponsibility/MoneyTransfer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java_Start/src/main/java/ru/gb/Bootcamp/Patterns/chainsOfResponsibility/P2BTransferMiddleware.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java_Start/src/main/java/ru/gb/Bootcamp/Patterns/chainsOfResponsibility/TransferManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java_Start/src/main/java/ru/gb/Bootcamp/Patterns/chainsOfResponsibility/TransferMiddleware.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java_Start/src/main/java/ru/gb/HomeWorks_core1/lesson1/HomeWorkApp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java_Start/src/main/java/ru/gb/HomeWorks_core1/lesson2/HomeWorkApp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java_Start/src/main/java/ru/gb/HomeWorks_core1/lesson2/NewHomeWorkApp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java_Start/src/main/java/ru/gb/HomeWorks_core1/lesson3/HomeWorkApp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java_Start/src/main/java/ru/gb/HomeWorks_core1/lesson3/NewHomeWorkApp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java_Start/src/main/java/ru/gb/HomeWorks_core1/lesson4/TicTacToe.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java_Start/src/main/java/ru/gb/HomeWorks_core1/lesson5/Person.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java_Start/src/main/java/ru/gb/HomeWorks_core1/lesson6/Animal.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java_Start/src/main/java/ru/gb/HomeWorks_core1/lesson6/Cat.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java_Start/src/main/java/ru/gb/HomeWorks_core1/lesson6/Dog.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java_Start/src/main/java/ru/gb/HomeWorks_core1/lesson6/HomeWorkApp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java_Start/src/main/java/ru/gb/HomeWorks_core1/lesson7/Bowl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java_Start/src/main/java/ru/gb/HomeWorks_core1/lesson7/Cat.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java_Start/src/main/java/ru/gb/HomeWorks_core1/lesson7/HomeWorkApp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java_Start/src/main/java/ru/gb/HomeWorks_core1/lesson7hardLevel/Bowl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java_Start/src/main/java/ru/gb/HomeWorks_core1/lesson7hardLevel/Cat.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java_Start/src/main/java/ru/gb/HomeWorks_core1/lesson7hardLevel/Day.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java_Start/src/main/java/ru/gb/HomeWorks_core1/lesson7hardLevel/HomeWorkApp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java_Start/src/main/java/ru/gb/HomeWorks_core1/lesson8/GameMap.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java_Start/src/main/java/ru/gb/HomeWorks_core1/lesson8/GameStarter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java_Start/src/main/java/ru/gb/HomeWorks_core1/lesson8/GameWindow.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java_Start/src/main/java/ru/gb/HomeWorks_core1/lesson8/SettingsWindow.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java_Start/src/main/java/ru/gb/HomeWorks_core1/lesson8/Stone.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java_Start/src/main/java/ru/gb/HomeWorks_core2/Bootcamp_HW/Pattern/Classes/Builder/CreateTransport.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java_Start/src/main/java/ru/gb/HomeWorks_core2/Bootcamp_HW/Pattern/Classes/Builder/FootBuilder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java_Start/src/main/java/ru/gb/HomeWorks_core2/Bootcamp_HW/Pattern/Classes/Builder/GazelleBuilder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java_Start/src/main/java/ru/gb/HomeWorks_core2/Bootcamp_HW/Pattern/Classes/Builder/LargusBuilder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java_Start/src/main/java/ru/gb/HomeWorks_core2/Bootcamp_HW/Pattern/Classes/Builder/LogisticTransport.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java_Start/src/main/java/ru/gb/HomeWorks_core2/Bootcamp_HW/Pattern/Classes/Builder/MannBuilder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java_Start/src/main/java/ru/gb/HomeWorks_core2/Bootcamp_HW/Pattern/Classes/Builder/TransportBuilder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java_Start/src/main/java/ru/gb/HomeWorks_core2/Bootcamp_HW/Pattern/Classes/Builder/VeloBuilder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java_Start/src/main/java/ru/gb/HomeWorks_core2/Bootcamp_HW/Pattern/Classes/EasyBuilder/Cargo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java_Start/src/main/java/ru/gb/HomeWorks_core2/Bootcamp_HW/Pattern/Classes/Factory/CityLogisticFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java_Start/src/main/java/ru/gb/HomeWorks_core2/Bootcamp_HW/Pattern/Classes/Factory/IntercityLogistic.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java_Start/src/main/java/ru/gb/HomeWorks_core2/Bootcamp_HW/Pattern/Classes/Factory/IntercityLogisticFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java_Start/src/main/java/ru/gb/HomeWorks_core2/Bootcamp_HW/Pattern/Classes/Factory/Logistic.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java_Start/src/main/java/ru/gb/HomeWorks_core2/Bootcamp_HW/Pattern/Classes/Factory/LogisticFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java_Start/src/main/java/ru/gb/HomeWorks_core2/Bootcamp_HW/Pattern/Classes/Factory/СityLogistic.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java_Start/src/main/java/ru/gb/HomeWorks_core2/Bootcamp_HW/Pattern/LogisticApp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java_Start/src/main/java/ru/gb/HomeWorks_core2/lesson1/Barrier.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java_Start/src/main/java/ru/gb/HomeWorks_core2/lesson1/Cat.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java_Start/src/main/java/ru/gb/HomeWorks_core2/lesson1/HomeWorkApp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java_Start/src/main/java/ru/gb/HomeWorks_core2/lesson1/Human.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java_Start/src/main/java/ru/gb/HomeWorks_core2/lesson1/Robot.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java_Start/src/main/java/ru/gb/HomeWorks_core2/lesson1/Run.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java_Start/src/main/java/ru/gb/HomeWorks_core2/lesson1/Treadmill.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java_Start/src/main/java/ru/gb/HomeWorks_core2/lesson1/Wall.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java_Start/src/main/java/ru/gb/HomeWorks_core2/lesson2/HomeWorkApp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java_Start/src/main/java/ru/gb/HomeWorks_core2/lesson2/MyArrayDataException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java_Start/src/main/java/ru/gb/HomeWorks_core2/lesson2/MyArraySizeException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java_Start/src/main/java/ru/gb/HomeWorks_core2/lesson3/HomeWorkApp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java_Start/src/main/java/ru/gb/HomeWorks_core2/lesson3/TelephoneDirectory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java_Start/src/main/java/ru/gb/HomeWorks_core2/lesson4/HomeWorkApp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java_Start/src/main/java/ru/gb/HomeWorks_core2/lesson5/HomeWorkApp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java_Start/src/main/java/ru/gb/HomeWorks_core2/lesson6/ClientForMultiServer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java_Start/src/main/java/ru/gb/HomeWorks_core2/lesson6/EchoUDPServer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java_Start/src/main/java/ru/gb/HomeWorks_core2/lesson6/MultiSimpleSingleThreadConsoleTCPServer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java_Start/src/main/java/ru/gb/HomeWorks_core2/lesson6/SimpleEchoTCPMultiServer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java_Start/src/main/java/ru/gb/HomeWorks_core2/lesson6/SimpleEchoTCPServer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java_Start/src/main/java/ru/gb/HomeWorks_core2/lesson6/SimpleSingleThreadConsoleTCPClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java_Start/src/main/java/ru/gb/HomeWorks_core2/lesson6/SimpleSingleThreadConsoleTCPServer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java_Start/src/main/java/ru/gb/HomeWorks_core2/lesson6/SimpleUDPClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java_Start/src/main/java/ru/gb/HomeWorks_core2/lesson6/SuperSimpleConsoleTCPClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java_Start/src/main/java/ru/gb/HomeWorks_core2/lesson6/clints/SimpleSingleThreadConsoleTCPClient1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java_Start/src/main/java/ru/gb/HomeWorks_core2/lesson6/clints/SimpleSingleThreadConsoleTCPClient2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java_Start/src/main/java/ru/gb/HomeWorks_core3/lesson1/Apple.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java_Start/src/main/java/ru/gb/HomeWorks_core3/lesson1/Box.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java_Start/src/main/java/ru/gb/HomeWorks_core3/lesson1/Fruit.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java_Start/src/main/java/ru/gb/HomeWorks_core3/lesson1/HomeWorkApp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java_Start/src/main/java/ru/gb/HomeWorks_core3/lesson1/Orange.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java_Start/src/main/java/ru/gb/HomeWorks_core3/lesson1_test/Apple.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java_Start/src/main/java/ru/gb/HomeWorks_core3/lesson1_test/Box.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java_Start/src/main/java/ru/gb/HomeWorks_core3/lesson1_test/Fruit.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java_Start/src/main/java/ru/gb/HomeWorks_core3/lesson1_test/HomeWorkApp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java_Start/src/main/java/ru/gb/HomeWorks_core3/lesson1_test/Orange.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java_Start/src/main/java/ru/gb/HomeWorks_core3/lesson2/HomeWorkApp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java_Start/src/main/java/ru/gb/HomeWorks_core3/lesson2/students.db" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java_Start/src/main/java/ru/gb/HomeWorks_core3/lesson4/ClassWorkApp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java_Start/src/main/java/ru/gb/HomeWorks_core3/lesson4/HomeWork/ClassA.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java_Start/src/main/java/ru/gb/HomeWorks_core3/lesson4/HomeWork/ClassB.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java_Start/src/main/java/ru/gb/HomeWorks_core3/lesson4/HomeWork/ClassC.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java_Start/src/main/java/ru/gb/HomeWorks_core3/lesson4/HomeWork/ClassCount.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java_Start/src/main/java/ru/gb/HomeWorks_core3/lesson4/HomeWork/HomeWorkApp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java_Start/src/main/java/ru/gb/HomeWorks_core3/lesson5/Car.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java_Start/src/main/java/ru/gb/HomeWorks_core3/lesson5/MainClass.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java_Start/src/main/java/ru/gb/HomeWorks_core3/lesson5/Race.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java_Start/src/main/java/ru/gb/HomeWorks_core3/lesson5/Road.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java_Start/src/main/java/ru/gb/HomeWorks_core3/lesson5/Stage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java_Start/src/main/java/ru/gb/HomeWorks_core3/lesson5/Tunnel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java_Start/src/main/java/ru/gb/HomeWorks_core3/lesson6/Calculator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java_Start/src/main/java/ru/gb/HomeWorks_core3/lesson6/HomeWork6.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java_Start/src/main/java/ru/gb/HomeWorks_core3/lesson6/HomeWorkApp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java_Start/src/main/java/ru/gb/HomeWorks_core3/lesson6/logFile.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java_Start/src/main/java/ru/gb/HomeWorks_core3/lesson7/Cat.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java_Start/src/main/java/ru/gb/HomeWorks_core3/lesson7/CatAnnotation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java_Start/src/main/java/ru/gb/HomeWorks_core3/lesson7/ClassWorkApp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java_Start/src/main/java/ru/gb/HomeWorks_core3/lesson7/Dog.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java_Start/src/main/java/ru/gb/HomeWorks_core3/lesson7/HomeWork/AfterSuite.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java_Start/src/main/java/ru/gb/HomeWorks_core3/lesson7/HomeWork/BeforeSuite.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java_Start/src/main/java/ru/gb/HomeWorks_core3/lesson7/HomeWork/Cat.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java_Start/src/main/java/ru/gb/HomeWorks_core3/lesson7/HomeWork/Dog.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java_Start/src/main/java/ru/gb/HomeWorks_core3/lesson7/HomeWork/HomeWorkApp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java_Start/src/main/java/ru/gb/HomeWorks_core3/lesson7/HomeWork/MyTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java_Start/src/main/java/ru/gb/HomeWorks_core3/lesson7/HomeWork/MyTest2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java_Start/src/main/java/ru/gb/HomeWorks_core3/lesson7/HomeWork/RunTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java_Start/src/main/java/ru/gb/HomeWorks_core3/lesson7/HomeWork/TestAnnotation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java_Start/src/main/java/ru/gb/HomeWorks_core3/lesson7/MyAnotation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java_Start/src/main/java/ru/gb/SpringEE/lesson1/SimpleServerHello.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java_Start/src/main/java/ru/gb/SpringEE/lesson1/webxml.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java_Start/src/main/java/ru/gb/Test.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java_Start/src/main/java/ru/gb/TestClasses/Test1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java_Start/src/main/resources/Log4j2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JavaEE/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JavaEE/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JavaEE/src/main/java/ru/gb/JavaEE/CalcServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JavaEE/src/main/java/ru/gb/JavaEE/EncodingFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JavaEE/src/main/java/ru/gb/JavaEE/FirstServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JavaEE/src/main/java/ru/gb/JavaEE/GetProducts.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JavaEE/src/main/java/ru/gb/JavaEE/Product.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JavaEE/src/main/java/ru/gb/JavaEE/products/BootstrapListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JavaEE/src/main/java/ru/gb/JavaEE/products/Mall.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JavaEE/src/main/java/ru/gb/JavaEE/products/NewMall.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JavaEE/src/main/java/ru/gb/JavaEE/products/Product.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JavaEE/src/main/java/ru/gb/JavaEE/products/ProductRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JavaEE/src/main/java/ru/gb/JavaEE/readme" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JavaEE/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JavaEE/src/main/webapp/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JavaEE/src/main/webapp/mall.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
@@ -229,22 +52,60 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "jdk.selected.JAVA_MODULE": "openjdk-19",
-    "last_opened_file_path": "C:/Users/al121/IdeaProjects/GeekBrains/Java_Start/src",
+    "last_opened_file_path": "C:/Users/al121/IdeaProjects/GeekBrains/JavaEE",
     "ruby.rails.projectView.checked": "true"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\al121\IdeaProjects\GeekBrains\JavaEE\src\main\java\ru\gb\JavaEE" />
+      <recent name="C:\Users\al121\IdeaProjects\GeekBrains\JavaEE\src\main\webapp" />
       <recent name="C:\Users\al121\IdeaProjects\GeekBrains\Java_Start" />
       <recent name="C:\Users\al121\IdeaProjects\GeekBrains\Java_Start\src" />
       <recent name="C:\Users\al121\IdeaProjects\GeekBrains\Java_Start\src\main\java" />
-      <recent name="C:\Users\al121\IdeaProjects\GeekBrains\Java_Start\src\main\resources" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\al121\IdeaProjects\GeekBrains\Java_Start\src\main" />
     </key>
+  </component>
+  <component name="RubyModuleManagerSettings">
+    <option name="blackListedRootsPaths">
+      <list>
+        <option value="$PROJECT_DIR$/Java_Start" />
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="JavaEE" type="MavenRunConfiguration" factoryName="Maven">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <option value="clean" />
+                <option value="install" />
+                <option value="tomcat7:redeploy" />
+              </list>
+            </option>
+            <option name="pomFileName" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$/JavaEE" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method v="2" />
+    </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
