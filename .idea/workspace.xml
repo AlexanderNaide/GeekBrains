@@ -4,12 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="433aa207-0956-4ea8-a317-60357fe7df59" name="Changes" comment="1">
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="433aa207-0956-4ea8-a317-60357fe7df59" name="Changes" comment="Spring MVC ClassWork">
+      <change beforePath="$PROJECT_DIR$/Spring_MVC/HELP.md" beforeDir="false" afterPath="$PROJECT_DIR$/Spring_MVC/HELP.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Spring_MVC/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Spring_MVC/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spring_MVC/src/main/java/ru/gb/spring_mvc/ServletInitializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/Spring_MVC/src/main/java/ru/gb/spring_mvc/ServletInitializer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spring_MVC/src/main/java/ru/gb/spring_mvc/SpringMvcApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/Spring_MVC/src/main/java/ru/gb/spring_mvc/SpringMvcApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spring_MVC/src/test/java/ru/gb/spring_mvc/SpringMvcApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/Spring_MVC/src/test/java/ru/gb/spring_mvc/SpringMvcApplicationTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,7 +22,7 @@
         <entry key="$PROJECT_DIR$" value="master" />
       </map>
     </option>
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/Spring_MVC" />
     <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -68,7 +68,6 @@
   <component name="RubyModuleManagerSettings">
     <option name="blackListedRootsPaths">
       <list>
-        <option value="$PROJECT_DIR$/Spring_MVC" />
         <option value="$PROJECT_DIR$/Java_Start" />
       </list>
     </option>
@@ -138,7 +137,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670782546463</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Spring MVC ClassWork">
+      <created>1670791517590</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1670791517590</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -157,6 +163,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="1" />
-    <option name="LAST_COMMIT_MESSAGE" value="1" />
+    <MESSAGE value="Spring MVC ClassWork" />
+    <option name="LAST_COMMIT_MESSAGE" value="Spring MVC ClassWork" />
   </component>
 </project>
