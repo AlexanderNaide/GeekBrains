@@ -5,23 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="433aa207-0956-4ea8-a317-60357fe7df59" name="Changes" comment="1">
-      <change afterPath="$PROJECT_DIR$/Spring_Context/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Spring_Context/src/main/java/ru/gb/SpringContext/ClassWork/AppConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Spring_Context/src/main/java/ru/gb/SpringContext/ClassWork/Box.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Spring_Context/src/main/java/ru/gb/SpringContext/ClassWork/InMemoryProductRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Spring_Context/src/main/java/ru/gb/SpringContext/ClassWork/MainClass.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Spring_Context/src/main/java/ru/gb/SpringContext/ClassWork/OrderService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Spring_Context/src/main/java/ru/gb/SpringContext/ClassWork/Product.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Spring_Context/src/main/java/ru/gb/SpringContext/ClassWork/ProductRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Spring_Context/src/main/java/ru/gb/SpringContext/ClassWork/ProductService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Spring_Context/src/main/java/ru/gb/SpringContext/ClassWork/SecondProductRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Spring_Context/src/main/java/ru/gb/SpringContext/HomeWork/Cart.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Spring_Context/src/main/java/ru/gb/SpringContext/HomeWork/MainClass.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Spring_Context/src/main/java/ru/gb/SpringContext/HomeWork/Product.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Spring_Context/src/main/java/ru/gb/SpringContext/HomeWork/ProductRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Spring_Context/src/main/java/ru/gb/SpringContext/readme" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spring_MVC/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Spring_MVC/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -36,9 +23,17 @@
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
   </component>
   <component name="ProjectId" id="2ImMmEc9Y3upBfqosQtPQXGhSV5" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -46,18 +41,18 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "jdk.selected.JAVA_MODULE": "openjdk-19",
-    "last_opened_file_path": "C:/Users/al121/IdeaProjects/GeekBrains/Spring_Context/src/main/java",
-    "ruby.rails.projectView.checked": "true",
-    "settings.editor.selected.configurable": "File.Encoding"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;openjdk-19&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/al121/IdeaProjects/GeekBrains/Spring_Context/src/main/java&quot;,
+    &quot;ruby.rails.projectView.checked&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;File.Encoding&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\al121\IdeaProjects\GeekBrains\Spring_Context\src\main\java" />
@@ -73,6 +68,7 @@
   <component name="RubyModuleManagerSettings">
     <option name="blackListedRootsPaths">
       <list>
+        <option value="$PROJECT_DIR$/Spring_MVC" />
         <option value="$PROJECT_DIR$/Java_Start" />
       </list>
     </option>
@@ -112,9 +108,17 @@
       </MavenSettings>
       <method v="2" />
     </configuration>
+    <configuration name="SpringMvcApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="Spring_MVC" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="ru.gb.spring_mvc.SpringMvcApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
       <item itemvalue="Application.Unnamed" />
       <item itemvalue="Maven.JavaEE" />
+      <item itemvalue="Spring Boot.SpringMvcApplication" />
     </list>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
