@@ -11,6 +11,7 @@
         <module>Java_Start</module>
         <module>JavaEE</module>
         <module>Spring_Context</module>
+        <module>Spring_MVC</module>
     </modules>
 
     <properties>
