@@ -70,5 +70,8 @@ https://docs.spring.io/spring-boot/docs/3.0.0/maven-plugin/reference/htmlsingle/
 
 Далее самое интересное...
 Если папка с модулем стала красной - открываем её в проводнике и удаляем оттуда скрытую папку .Git
+Было также:
+    Ругаться на VCS root - открыть Configure (или Settings -> Version control -> Directory mappings)
+    -> открыть ошибочную директорию и изменить на Project
 Потом надо снова добавить проект к Git:
 правой кнопкой на папке Spring проекта -> Git -> +Add
