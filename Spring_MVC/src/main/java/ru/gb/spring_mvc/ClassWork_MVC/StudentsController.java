@@ -1,4 +1,4 @@
-package ru.gb.spring_mvc.ClassWork;
+package ru.gb.spring_mvc.ClassWork_MVC;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -24,7 +24,7 @@ public class StudentsController {
 
         model.addAttribute("students", students);
 
-        return "classwork/students";
+        return "classwork_mvc/students";
     }
 
 

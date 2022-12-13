@@ -1,4 +1,4 @@
-package ru.gb.spring_mvc.HomeWork;
+package ru.gb.spring_mvc.HomeWork_MVC;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;

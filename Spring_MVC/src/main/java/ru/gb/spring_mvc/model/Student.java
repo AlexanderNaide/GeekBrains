@@ -3,12 +3,23 @@ package ru.gb.spring_mvc.model;
 public class Student {
 
     private static Long counter = 1L;
-    private Long id;
+    private final Long id;
     private String name;
+
+    private Integer score;
 
     public Student() {
         this.id = counter++;
-        this.name = "Student #" + id;
+    }
+
+    public Student(String name) {
+        this();
+        this.name = name;
+    }
+
+    public Student(String name, Integer score) {
+        this(name);
+        this.score = score;
     }
 
     public Long getId() {
@@ -17,5 +28,17 @@ public class Student {
 
     public String getName() {
         return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public Integer getScore() {
+        return score;
+    }
+
+    public void setScore(Integer score) {
+        this.score = score;
     }
 }

@@ -1,4 +1,4 @@
-package ru.gb.spring_mvc.ClassWork;
+package ru.gb.spring_mvc.ClassWork_MVC;
 
 import jakarta.servlet.http.HttpServlet;
 import org.springframework.http.MediaType;
@@ -14,8 +14,8 @@ import org.springframework.web.bind.annotation.ResponseBody;
 public class HelloController extends HttpServlet{
 
 
-    //    @GetMapping - получить данные, аналог doGet метода
-    //    @PostMapping - обновить данные, аналог doPost метода
+    //    @GetMapping - получить данные, аналог doGet метода (в тело get запроса обычно ничего полезного не зашивается, он ограничен по длине 4b)
+    //    @PostMapping - обновить данные, аналог doPost метода (в тело post запроса можно зашивать например json, не ограничен по длине)
     //    @DeleteMapping - удалить данные, аналог doDelete метода
     //    @PutMapping - добавить данные, аналог doPut метода
     //    @PatchMapping - ой, даже хз, что-то там с перенаправлением с неопределенным путем, типа("/users/{username}"), аналог doTrace метода, кажется
