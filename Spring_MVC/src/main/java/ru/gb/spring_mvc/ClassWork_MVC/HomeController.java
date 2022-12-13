@@ -1,4 +1,4 @@
-package ru.gb.spring_mvc.ClassWork;
+package ru.gb.spring_mvc.ClassWork_MVC;
 
 import jakarta.servlet.http.HttpServlet;
 import org.springframework.stereotype.Controller;
