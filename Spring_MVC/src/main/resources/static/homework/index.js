@@ -9,14 +9,14 @@ angular.module('app', []).controller('indexController', function ($scope, $http)
     };
 
     $scope.addProduct = function () {
-        $http.post(contextPath + '/add_product', $scope.newProduct)
+        $http.post(contextPath + '/add-product', $scope.newProduct)
             .then(function (response) {
                 $scope.loadProducts();
             });
     };
 
     $scope.deleteProduct = function (ProductID) {
-        $http.get(contextPath + '/delete_product/' + ProductID)
+        $http.delete(contextPath + '/delete-product/' + ProductID)
             .then(function (response) {
                 $scope.loadProducts();
             });
