@@ -23,12 +23,12 @@ public class ProductControllerBoot {
         return service.getAllProduct();
     }
 
-    @GetMapping("/delete_product/{id}")
+    @DeleteMapping("/delete-product/{id}")
     public void deleteById(@PathVariable Long id){
         service.deleteById(id);
     }
 
-    @PostMapping("/add_product")
+    @PostMapping("/add-product")
     public void addProductForm(@RequestBody ProductBoot product){
         service.addProduct(product);
     }
