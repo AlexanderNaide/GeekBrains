@@ -22,15 +22,41 @@ server:
   port: 8080             -- порт, на котором будет стартовать tomcat
   servlet:
     context-path: /app   -- корневой префикс приложения.
+-- Дополнительно --
+(Для изменения расширения файлов шаблонов страниц (ну вдруг зачем-то понадобится))
+spring:
+  thymeleaf:
+    suffix: .html2
+(Для изменения папки шаблонов страниц)
+spring:
+  thymeleaf:
+    prefix: /pages
+(Для более-менее читаемого представления json)
+spring:
+  jackson:
+    serialization:
+      indent-output: true
 
 
-Если не менять, то настройки для Application.properties:
+Если не менять расширение, то настройки для Application.properties:
 server.port=8080
 server.servlet.context-path=/app
 
 
 Много полезного по подключению ресурсов
 https://ru.stackoverflow.com/questions/1211649/thymeleaf-не-подключает-css-файл
+
+
+Тестировать html запросы удобно в Postman
+https://www.postman.com/downloads/?utm_source=postman-home
+
+
+
+
+
+
+
+
 
 
 Если создаем Spring проект внутри родительского (не Spring BOOT) проекта нужно следующее:

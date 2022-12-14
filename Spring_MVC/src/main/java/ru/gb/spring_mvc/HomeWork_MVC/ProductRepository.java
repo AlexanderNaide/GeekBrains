@@ -1,4 +1,4 @@
-package ru.gb.spring_mvc.HomeWork;
+package ru.gb.spring_mvc.HomeWork_MVC;
 
 import jakarta.annotation.PostConstruct;
 import org.springframework.stereotype.Component;
