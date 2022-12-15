@@ -12,6 +12,7 @@
         <module>JavaEE</module>
         <module>Spring_Context</module>
         <module>Spring_MVC</module>
+        <module>Hibernate</module>
     </modules>
 
     <properties>
