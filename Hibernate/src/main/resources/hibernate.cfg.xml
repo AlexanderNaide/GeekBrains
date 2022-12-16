@@ -36,6 +36,7 @@
         <property name="hibernate.format_sql">true</property>
 
         <mapping class="ru.gb.Hibernate_ClassWork.model.Student"/>
+            <mapping class="ru.gb.Hibernate_HomeWork.model.Product"/>
 
     </session-factory>
 </hibernate-configuration>
