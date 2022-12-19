@@ -2,10 +2,13 @@ package ru.gb.HomeWork;
 
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import ru.gb.HomeWork.Repository.ProductRepository;
+import ru.gb.HomeWork.Repository.TheBuyRepository;
 import ru.gb.HomeWork.Repository.UserRepository;
 import ru.gb.HomeWork.model.Product;
+import ru.gb.HomeWork.model.TheBuy;
 import ru.gb.HomeWork.model.User;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class AppClass {
@@ -16,15 +19,16 @@ public class AppClass {
         AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext("ru.gb.HomeWork");
         ProductRepository productRepository = context.getBean(ProductRepository.class);
         UserRepository userRepository = context.getBean(UserRepository.class);
+        TheBuyRepository buyRepository = context.getBean(TheBuyRepository.class);
 
-        productRepository.insert(new Product("РњРѕР»РѕРєРѕ", 65.60));
-        productRepository.insert(new Product("РљРµС„РёСЂ", 75.80));
-        productRepository.insert(new Product("Р™РѕРіСѓСЂС‚", 88.90));
-        productRepository.insert(new Product("РҐР»РµР±", 49.9));
-        productRepository.insert(new Product("Р‘Р°С‚РѕРЅ", 55.6));
-        productRepository.insert(new Product("РћРіСѓСЂС†С‹", 244.9));
-        productRepository.insert(new Product("РџРѕРјРёРґРѕСЂС‹", 180.0));
-        productRepository.insert(new Product("Р‘Р°РЅР°РЅС‹", 139.99));
+        productRepository.insert(new Product("Молоко", 65.60));
+        productRepository.insert(new Product("Кефир", 75.80));
+        productRepository.insert(new Product("Йогурт", 88.90));
+        productRepository.insert(new Product("Хлеб", 49.9));
+        productRepository.insert(new Product("Батон", 55.6));
+        productRepository.insert(new Product("Огурцы", 244.9));
+        productRepository.insert(new Product("Помидоры", 180.0));
+        productRepository.insert(new Product("Бананы", 139.99));
 
         userRepository.insert(new User("user1"));
         userRepository.insert(new User("user2"));
@@ -37,43 +41,52 @@ public class AppClass {
         userRepository.insert(new User("user9"));
         userRepository.insert(new User("user10"));
 
-//        userRepository.addProduct(8L, 8L);
-//        userRepository.addProduct(8L, 4L);
-//        userRepository.addProduct(10L, 6L);
-//        userRepository.addProduct(4L, 4L);
-//        userRepository.addProduct(1L, 2L);
-//        userRepository.addProduct(7L, 7L);
-//        userRepository.addProduct(9L, 5L);
-//        userRepository.addProduct(2L, 3L);
-//        userRepository.addProduct(7L, 1L);
-//        userRepository.addProduct(3L, 7L);
-//        userRepository.addProduct(7L, 2L);
-//        userRepository.addProduct(2L, 4L);
-//        userRepository.addProduct(4L, 8L);
-//        userRepository.addProduct(10L, 8L);
-//        userRepository.addProduct(1L, 4L);
-//        userRepository.addProduct(9L, 2L);
-//        userRepository.addProduct(7L, 1L);
-//        userRepository.addProduct(2L, 5L);
-//        userRepository.addProduct(4L, 3L);
-//        userRepository.addProduct(10L, 7L);
-//        userRepository.addProduct(1L, 4L);
-//        userRepository.addProduct(3L, 2L);
-//        userRepository.addProduct(7L, 6L);
-//        userRepository.addProduct(5L, 7L);
-//        userRepository.addProduct(7L, 3L);
+        List<Product> list1 = new ArrayList<>();
+        list1.add(productRepository.get(1L));
+        list1.add(productRepository.get(2L));
+        list1.add(productRepository.get(4L));
+        list1.add(productRepository.get(5L));
+        buyRepository.insert(new TheBuy(userRepository.get(1L), list1));
+
+        List<Product> list2 = new ArrayList<>();
+        list2.add(productRepository.get(3L));
+        list2.add(productRepository.get(5L));
+        list2.add(productRepository.get(7L));
+        buyRepository.insert(new TheBuy(userRepository.get(2L), list2));
+
+        List<Product> list3 = new ArrayList<>();
+        list3.add(productRepository.get(3L));
+        list3.add(productRepository.get(5L));
+        list3.add(productRepository.get(8L));
+        list3.add(productRepository.get(4L));
+        list3.add(productRepository.get(2L));
+        buyRepository.insert(new TheBuy(userRepository.get(7L), list3));
+
+        List<Product> list4 = new ArrayList<>();
+        list4.add(productRepository.get(1L));
+        list4.add(productRepository.get(2L));
+        list4.add(productRepository.get(4L));
+        buyRepository.insert(new TheBuy(userRepository.get(1L), list4));
+
+        List<Product> list5 = new ArrayList<>();
+        list5.add(productRepository.get(1L));
+        list5.add(productRepository.get(2L));
+        list5.add(productRepository.get(4L));
+        buyRepository.insert(new TheBuy(userRepository.get(2L), list5));
 
 
 
 
 
+        // Список товаров, купленных пользователем с датой и ценой по id покупателя
+        buyRepository.method1(7L).forEach(System.out::println);
 
-        // РџРѕР»СѓС‡Р°РµРј Рё РїРµС‡Р°С‚Р°РµРј СЃРїРёСЃРѕРє РїСЂРѕРґСѓРєС‚РѕРІ Сѓ РїРѕРєСѓРїР°С‚РµР»СЏ
-//        userRepository.get(7L).getProducts().forEach(System.out::println); // СЃС‚Р°СЂС‹Р№ РІР°СЂРёР°РЅС‚
-        userRepository.get(7L).getBuyList().forEach(b -> b.getProductsList().forEach(System.out::println));
 
-        // РџРѕР»СѓС‡Р°РµРј Рё РїРµС‡Р°С‚Р°РµРј СЃРїРёСЃРѕРє РїРѕРєСѓРїР°С‚РµР»РµР№ РЅР° С‚РѕРІР°СЂ
-        productRepository.get(7L).getUsers().forEach(System.out::println);
+        // Список покупок с указанием времени по id покупателя
+
+        // Список пользователей купивших товар с датой и ценой по id товара
+
+        // Список пользователей с потраченной всего суммой сортированной по сумме
 
 
     }

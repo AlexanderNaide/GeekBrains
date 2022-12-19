@@ -1,4 +1,4 @@
-﻿package ru.gb.HomeWork.model;
+package ru.gb.HomeWork.model;
 
 import jakarta.persistence.*;
 import org.hibernate.annotations.CreationTimestamp;
@@ -14,7 +14,7 @@ public class TheBuy {
     private Long id;
 
     @ManyToOne
-    @JoinColumn(name = "buyList")
+    @JoinColumn(name = "user_id")
     private User buyer;
 
     @CreationTimestamp
@@ -24,7 +24,7 @@ public class TheBuy {
     @ManyToMany
     @JoinTable(
             name = "purchase",
-            joinColumns = @JoinColumn(name = "user_id"),
+            joinColumns = @JoinColumn(name = "buy_id"),
             inverseJoinColumns = @JoinColumn(name = "product_id")
     )
     private List<Product> productsList;

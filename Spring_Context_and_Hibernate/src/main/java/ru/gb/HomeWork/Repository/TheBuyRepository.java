@@ -59,4 +59,19 @@ public class TheBuyRepository extends Repository implements BuyDao {
                 entityManager.merge(buy));
     }
 
+
+    public List<String> method1(Long id) {
+        return executeForEntityManager(entityManager -> {
+
+                    List<String> list = entityManager.createQuery("select new java.lang.String(new SimpleDateFormat(\"dd-MM-yyyy\").format(b.createDate)) from TheBuy as b " +
+                            "inner join Product as pr " +
+                            "where b.buyer.id = :id"
+                                    , String.class)
+                            .setParameter("id", id)
+                            .getResultList();
+                    return list;
+                }
+        );
+    }
+
 }

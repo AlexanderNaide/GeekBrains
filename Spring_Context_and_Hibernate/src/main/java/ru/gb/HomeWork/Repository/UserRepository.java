@@ -68,4 +68,10 @@ public class UserRepository extends Repository implements UserDao {
         );
     }
 
+    public List<TheBuy> getAllPayProducts(Long userId) {
+        return executeForEntityManager(entityManager ->
+                new ArrayList<TheBuy>(entityManager.find(User.class, userId).getBuyList())
+        );
+    }
+
 }
