@@ -18,6 +18,10 @@ public class Product {
     @Column(nullable = false)
     private Double price;
 
+//    @ManyToOne
+//    @JoinColumn(name = "user_id")
+//    private User userId;
+
     @ManyToMany
     @JoinTable(
             name = "purchase",
@@ -39,10 +43,16 @@ public class Product {
         this.id = id;
     }
 
+/*    public Product(Long id, String title, Double price, List<User> usersList) {
+        this(id, title, price);
+        this.usersList = usersList;
+    }*/
+
     public Product(Long id, String title, Double price, List<User> usersList) {
         this(id, title, price);
         this.usersList = usersList;
     }
+
 
     public Long getId() {
         return id;
@@ -68,7 +78,15 @@ public class Product {
         this.price = price;
     }
 
-    public List<User> getUsers() {
+/*    public User getUserId() {
+        return userId;
+    }
+
+    public void setUserId(User userId) {
+        this.userId = userId;
+    }*/
+
+        public List<User> getUsers() {
         return usersList;
     }
 

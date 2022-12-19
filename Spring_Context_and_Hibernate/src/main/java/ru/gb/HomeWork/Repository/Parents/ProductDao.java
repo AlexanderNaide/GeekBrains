@@ -1,6 +1,8 @@
-package ru.gb.HomeWork.Repository;
+package ru.gb.HomeWork.Repository.Parents;
 
 import ru.gb.HomeWork.model.Product;
+import ru.gb.HomeWork.model.User;
+
 import java.util.List;
 
 public interface ProductDao {
@@ -12,5 +14,7 @@ public interface ProductDao {
     void delete(Product product);
 
     List<Product> getAll();
+
+    void save(Product product);
 
 }

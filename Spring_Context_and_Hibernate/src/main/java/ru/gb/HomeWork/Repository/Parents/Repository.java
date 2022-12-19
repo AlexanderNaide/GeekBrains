@@ -1,11 +1,13 @@
-package ru.gb.HomeWork.Repository;
+package ru.gb.HomeWork.Repository.Parents;
 
 import jakarta.persistence.EntityManager;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
+import ru.gb.HomeWork.Repository.FactoryService;
 import ru.gb.HomeWork.model.Product;
 import ru.gb.HomeWork.model.User;
 
+import javax.annotation.PostConstruct;
 import java.util.function.Consumer;
 import java.util.function.Function;
 
@@ -13,10 +15,16 @@ import java.util.function.Function;
 public class Repository {
 
     private FactoryService factoryService;
+    private EntityManager em;
 
     @Autowired
     public void setFactoryService(FactoryService factoryService) {
         this.factoryService = factoryService;
+    }
+
+    @PostConstruct
+    public void init(){
+        em = factoryService.getManager();
     }
 
     protected <R> R executeForEntityManager(Function<EntityManager, R> function){
@@ -45,31 +53,9 @@ public class Repository {
         }
     }
 
-/*    public void addBuy(Long userId, Long productId) {
-        User user = executeForEntityManager(entityManager ->
-            entityManager.find(User.class, userId)
-        );
-        Product product = executeForEntityManager(entityManager ->
-                entityManager.find(Product.class, productId)
-        );
-        executeInTransaction(entityManager -> {
-            user.getProducts().add(product);
-            product.getUsers().add(user);
-        });
-    }*/
-
-/*    public void addBuy(Long userId, Long productId) {
-        executeInTransaction(entityManager -> {
-            User user = entityManager.find(User.class, userId);
-            Product product = entityManager.find(Product.class, productId);
-            user.getProducts().add(product);
-            product.getUsers().add(user);
-        });
-    }*/
-
-    public void addBuy(Long userId, Long productId) {
-        executeInTransaction(entityManager -> {
-            entityManager.find(User.class, userId).getProducts().add(entityManager.find(Product.class, productId));
-        });
-    }
+//    public void addBuy(Long userId, Long productId) {
+//        executeInTransaction(entityManager -> {
+//            entityManager.find(User.class, userId).getProducts().add(entityManager.find(Product.class, productId));
+//        });
+//    }
 }

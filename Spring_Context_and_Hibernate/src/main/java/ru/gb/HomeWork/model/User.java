@@ -2,6 +2,7 @@ package ru.gb.HomeWork.model;
 
 import jakarta.persistence.*;
 
+import java.util.ArrayList;
 import java.util.List;
 
 @Entity
@@ -15,19 +16,23 @@ public class User {
     @Column(unique = true, nullable = false)
     private String name;
 
-    @ManyToMany
-    @JoinTable(
-            name = "purchase",
-            joinColumns = @JoinColumn(name = "user_id"),
-            inverseJoinColumns = @JoinColumn(name = "product_id")
-    )
-    private List<Product> productsList;
+    @OneToMany (mappedBy = "buyer")
+    private List<TheBuy> buyList;
+
+//    @ManyToMany
+//    @JoinTable(
+//            name = "purchase",
+//            joinColumns = @JoinColumn(name = "user_id"),
+//            inverseJoinColumns = @JoinColumn(name = "product_id")
+//    )
+//    private List<Product> productsList;
 
     public User() {
     }
 
     public User(String name) {
         this.name = name;
+        this.buyList = new ArrayList<>();
     }
 
     public User(Long id, String name) {
@@ -35,9 +40,9 @@ public class User {
         this.name = name;
     }
 
-    public User(Long id, String name, List<Product> productsList) {
+    public User(Long id, String name, List<TheBuy> buyList) {
         this(id, name);
-        this.productsList = productsList;
+        this.buyList = buyList;
     }
 
     public Long getId() {
@@ -56,12 +61,12 @@ public class User {
         this.name = name;
     }
 
-    public List<Product> getProducts() {
-        return productsList;
+    public List<TheBuy> getBuyList() {
+        return buyList;
     }
 
-    public void setProducts(List<Product> productsList) {
-        this.productsList = productsList;
+    public void setBuyList(List<TheBuy> buyList) {
+        this.buyList = buyList;
     }
 
     @Override
