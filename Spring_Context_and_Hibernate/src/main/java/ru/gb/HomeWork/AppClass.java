@@ -18,22 +18,22 @@ public class AppClass {
 
 
 
-        System.out.println("\n\nСписок товаров, купленных пользователем с датой и ценой по id покупателя(id3)");
+        System.out.println("\n\nРЎРїРёСЃРѕРє С‚РѕРІР°СЂРѕРІ, РєСѓРїР»РµРЅРЅС‹С… РїРѕР»СЊР·РѕРІР°С‚РµР»РµРј СЃ РґР°С‚РѕР№ Рё С†РµРЅРѕР№ РїРѕ id РїРѕРєСѓРїР°С‚РµР»СЏ(id3)");
         buyRepository.method1(3L).forEach(System.out::println);
 
 
 
-        System.out.println("\n\nСписок покупок с указанием времени по id покупателя(id2)");
+        System.out.println("\n\nРЎРїРёСЃРѕРє РїРѕРєСѓРїРѕРє СЃ СѓРєР°Р·Р°РЅРёРµРј РІСЂРµРјРµРЅРё РїРѕ id РїРѕРєСѓРїР°С‚РµР»СЏ(id2)");
         buyRepository.method2(2L).forEach(System.out::println);
 
 
 
-        System.out.println("\n\nСписок пользователей купивших товар с датой и ценой по id товара(id2)");
+        System.out.println("\n\nРЎРїРёСЃРѕРє РїРѕР»СЊР·РѕРІР°С‚РµР»РµР№ РєСѓРїРёРІС€РёС… С‚РѕРІР°СЂ СЃ РґР°С‚РѕР№ Рё С†РµРЅРѕР№ РїРѕ id С‚РѕРІР°СЂР°(id2)");
         buyRepository.method3(2L).forEach(System.out::println);
 
 
 
-        System.out.println("\n\nСписок пользователей с потраченной всего суммой сортированной по сумме");
+        System.out.println("\n\nРЎРїРёСЃРѕРє РїРѕР»СЊР·РѕРІР°С‚РµР»РµР№ СЃ РїРѕС‚СЂР°С‡РµРЅРЅРѕР№ РІСЃРµРіРѕ СЃСѓРјРјРѕР№ СЃРѕСЂС‚РёСЂРѕРІР°РЅРЅРѕР№ РїРѕ СЃСѓРјРјРµ");
         buyRepository.method4().forEach(System.out::println);
 
     }
