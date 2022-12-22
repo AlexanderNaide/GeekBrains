@@ -6,21 +6,29 @@ import org.springframework.boot.context.event.ApplicationReadyEvent;
 import org.springframework.context.event.EventListener;
 import org.springframework.stereotype.Component;
 import ru.gb.spring_boot_and_hibernate.model.Customer;
+import ru.gb.spring_boot_and_hibernate.model.Product;
 import ru.gb.spring_boot_and_hibernate.repository.CustomerRepository;
+import ru.gb.spring_boot_and_hibernate.repository.ProductRepository;
 
 @Component
 public class CustomerDataGenerator {
 
-    private CustomerRepository customerRepository;
+    private final CustomerRepository customerRepository;
+    private final ProductRepository productRepository;
 
     @Autowired
-    public void setCustomerRepository(CustomerRepository customerRepository) {
+    public CustomerDataGenerator(CustomerRepository customerRepository, ProductRepository productRepository) {
         this.customerRepository = customerRepository;
+        this.productRepository = productRepository;
     }
 
     @EventListener(ApplicationReadyEvent.class)
     public void generateDataOnStartup(){
 //        Faker faker = new Faker();
+
+        // Faker не работает. Добавляю зависимость в Pom(даже не касаясь самого Faker в проекте)
+        // и Spring перестает запускаться, падает на старте с простыней ошибок, среди них что-то там
+        // про Android. Видимо что-то не так подключается, но я не разобрался что.
 
         for (int i = 0; i < 10; i++) {
             Customer customer = new Customer();
@@ -34,6 +42,13 @@ public class CustomerDataGenerator {
             customer.setAge(20 + (3 * i));
 
             customerRepository.save(customer);
+        }
+
+        for (int i = 0; i < 20; i++) {
+            Product product = new Product();
+            product.setTitle("product_" + i);
+            product.setPrice(23.75 + (i * 17.99));
+            productRepository.save(product);
         }
     }
 
