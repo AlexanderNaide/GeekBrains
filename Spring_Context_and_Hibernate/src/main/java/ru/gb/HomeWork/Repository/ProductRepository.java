@@ -25,6 +25,8 @@ public class ProductRepository extends Repository implements ProductDao {
         return executeForEntityManager(entityManager -> {
             Product product = entityManager.find(Product.class, id);
             product.setUsers(new ArrayList<>(product.getUsers()));
+//            На самом деле вопрос с загрузкой List надо было решать так:
+//            Product product1 = (Product) entityManager.createQuery("select p from Product p join fetch p.usersList where p.id=:id").setParameter("id", id).getSingleResult();
             return product;
             }
         );
