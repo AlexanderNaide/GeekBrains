@@ -26,10 +26,6 @@ public class CustomerDataGenerator {
     public void generateDataOnStartup(){
 //        Faker faker = new Faker();
 
-        // Faker не работает. Добавляю зависимость в Pom(даже не касаясь самого Faker в проекте)
-        // и Spring перестает запускаться, падает на старте с простыней ошибок, среди них что-то там
-        // про Android. Видимо что-то не так подключается, но я не разобрался что.
-
         for (int i = 0; i < 10; i++) {
             Customer customer = new Customer();
 //            customer.setName(faker.name().fullName());
