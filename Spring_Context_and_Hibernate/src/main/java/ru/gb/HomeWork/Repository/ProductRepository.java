@@ -1,5 +1,6 @@
 package ru.gb.HomeWork.Repository;
 
+import jakarta.transaction.Transactional;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 import ru.gb.HomeWork.Repository.Parents.ProductDao;
@@ -23,8 +24,10 @@ public class ProductRepository extends Repository implements ProductDao {
     @Override
     public Product get(Long id) {
         return executeForEntityManager(entityManager -> {
-            Product product = entityManager.find(Product.class, id);
-            product.setUsers(new ArrayList<>(product.getUsers()));
+//            Product product = entityManager.find(Product.class, id);
+//            product.setUsers(new ArrayList<>(product.getUsers()));
+//            На самом деле вопрос с загрузкой List надо было решать так:
+            Product product = (Product) entityManager.createQuery("select p from Product p join fetch p.usersList where p.id=:id").setParameter("id", id).getSingleResult();
             return product;
             }
         );

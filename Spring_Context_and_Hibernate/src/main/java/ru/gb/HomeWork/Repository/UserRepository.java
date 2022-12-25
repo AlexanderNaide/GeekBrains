@@ -27,8 +27,10 @@ public class UserRepository extends Repository implements UserDao {
         return executeForEntityManager(entityManager -> {
             User user = entityManager.find(User.class, id);
             user.setBuyList(new ArrayList<>(user.getBuyList()));
-//            user.setProducts(new ArrayList<>(user.getProducts()));
-            return user;
+//            На самом деле вопрос с загрузкой List надо было решать так:
+//            User user1 = (User) entityManager.createQuery("select u from User u join fetch u.buyList where u.id=:id").setParameter("id", id).getSingleResult();
+
+                    return user;
             }
         );
     }
