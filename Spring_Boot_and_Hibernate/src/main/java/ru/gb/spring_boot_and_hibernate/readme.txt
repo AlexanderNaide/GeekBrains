@@ -1,3 +1,14 @@
+Зависимости:
+    Spring Web
+    Lombok
+    Spring Data JPA     - основное для работы с БД
+    MySQL
+
+
+
+
+Настройки в application.yml
+
 spring:
   datasource:
     url: jdbc:mysql://localhost:3306/spring_hibernate?createDatabaseIfNotExist=true
@@ -15,4 +26,3 @@ spring:
       indent-output: true
   jooq:
     sql-dialect: org.hibernate.dialect.MySQLDialect
-

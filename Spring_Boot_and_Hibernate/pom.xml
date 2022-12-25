@@ -33,12 +33,12 @@
     <dependencies>
         <!-- https://mvnrepository.com/artifact/com.github.javafaker/javafaker -->
 <!--        Автогенератор данных для тестовых проектов-->
-<!--        Не работает,сука, причем не сам не работает, а ломается весь спринг при добавлении только 1 этой зависимости-->
-<!--        <dependency>
+
+        <dependency>
             <groupId>com.github.javafaker</groupId>
             <artifactId>javafaker</artifactId>
             <version>1.0.2</version>
-        </dependency>-->
+        </dependency>
 
 
         <dependency>
