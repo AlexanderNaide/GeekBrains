@@ -78,7 +78,7 @@ public class TheBuyRepository extends Repository implements BuyDao {
                     SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss", Locale.ROOT);
                     List<String> resp = new ArrayList<>();
                     for (Object[] o : objects) {
-                        resp.add(String.format("�������: %s      ������� ����: %s      ������������: %s", formatter.format(o[0]), o[1], o[2]));
+                        resp.add(String.format("�������: %s      ����: %s      ������������: %s", formatter.format(o[0]), o[1], o[2]));
                     }
 
                     return resp;
@@ -122,7 +122,7 @@ public class TheBuyRepository extends Repository implements BuyDao {
                     SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss", Locale.ROOT);
                     List<String> resp = new ArrayList<>();
                     for (Object[] o : objects) {
-                        resp.add(String.format("�������: %s      ������� ����: %s      ������: %s", formatter.format(o[0]), o[1], o[2]));
+                        resp.add(String.format("�������: %s      ����: %s      ����������: %s", formatter.format(o[0]), o[1], o[2]));
                     }
                     return resp;
                 }

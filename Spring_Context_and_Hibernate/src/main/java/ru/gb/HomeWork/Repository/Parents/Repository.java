@@ -1,6 +1,7 @@
 package ru.gb.HomeWork.Repository.Parents;
 
 import jakarta.persistence.EntityManager;
+import jakarta.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import ru.gb.HomeWork.Repository.FactoryService;
