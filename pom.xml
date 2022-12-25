@@ -13,6 +13,7 @@
         <module>Spring_Context</module>
         <module>Spring_MVC</module>
         <module>Hibernate</module>
+        <module>Spring_Context_and_Hibernate</module>
     </modules>
 
     <properties>
