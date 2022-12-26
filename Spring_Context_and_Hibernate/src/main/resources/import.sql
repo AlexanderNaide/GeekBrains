@@ -1,4 +1,5 @@
-/*CREATE DATABASE  IF NOT EXISTS `spring_hibernate`;
+/*
+CREATE DATABASE  IF NOT EXISTS `spring_hibernate`;
 USE `spring_hibernate`;
 
 DROP TABLE IF EXISTS `users`;
