@@ -78,7 +78,7 @@ public class TheBuyRepository extends Repository implements BuyDao {
                     SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss", Locale.ROOT);
                     List<String> resp = new ArrayList<>();
                     for (Object[] o : objects) {
-                        resp.add(String.format("Покупка: %s      Цена: %s      Наименование: %s", formatter.format(o[0]), o[1], o[2]));
+                        resp.add(String.format("РџРѕРєСѓРїРєР°: %s      Р¦РµРЅР°: %s      РќР°РёРјРµРЅРѕРІР°РЅРёРµ: %s", formatter.format(o[0]), o[1], o[2]));
                     }
 
                     return resp;
@@ -97,7 +97,7 @@ public class TheBuyRepository extends Repository implements BuyDao {
                     List<String> resp = new ArrayList<>();
                     List<Date> objects = query.getResultList();
                     for (Date o : objects) {
-                        resp.add(String.format("Покупка: %s", formatter.format(o)));
+                        resp.add(String.format("РџРѕРєСѓРїРєР°: %s", formatter.format(o)));
                     }
                     return resp;
 
@@ -122,7 +122,7 @@ public class TheBuyRepository extends Repository implements BuyDao {
                     SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss", Locale.ROOT);
                     List<String> resp = new ArrayList<>();
                     for (Object[] o : objects) {
-                        resp.add(String.format("Покупка: %s      Цена: %s      Покупатель: %s", formatter.format(o[0]), o[1], o[2]));
+                        resp.add(String.format("РџРѕРєСѓРїРєР°: %s      Р¦РµРЅР°: %s      РџРѕРєСѓРїР°С‚РµР»СЊ: %s", formatter.format(o[0]), o[1], o[2]));
                     }
                     return resp;
                 }
@@ -144,7 +144,7 @@ public class TheBuyRepository extends Repository implements BuyDao {
                     List<Object[]> objects = query.getResultList();
                     List<String> resp = new ArrayList<>();
                     for (Object[] o : objects) {
-                        resp.add(String.format("%s       Сумма средств: %.2f", o[0], o[1] != null ? (Double)o[1] : 0.0 ));
+                        resp.add(String.format("%s       РЎСѓРјРјР° СЃСЂРµРґСЃС‚РІ: %.2f", o[0], o[1] != null ? (Double)o[1] : 0.0 ));
                     }
                     return resp;
                 }
