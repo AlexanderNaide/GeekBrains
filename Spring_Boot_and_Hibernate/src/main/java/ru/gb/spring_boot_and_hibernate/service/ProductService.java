@@ -1,10 +1,13 @@
 package ru.gb.spring_boot_and_hibernate.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.PageRequest;
 import org.springframework.stereotype.Service;
+import ru.gb.spring_boot_and_hibernate.model.Customer;
 import ru.gb.spring_boot_and_hibernate.model.Product;
 import ru.gb.spring_boot_and_hibernate.repository.ProductRepository;
 
+import java.awt.print.Pageable;
 import java.util.List;
 import java.util.Optional;
 
@@ -34,11 +37,11 @@ public class ProductService {
         productRepository.deleteById(id);
     }
 
-    public List<Product> findAllSorted(Double min, Double max) {
+    public List<Product> findAllSorted(String val, Double min, Double max) {
         if (max == -1.0){
-            return productRepository.findProductsByPriceGreaterThan(min);
+            return productRepository.searchAllByTitleContainingAndPriceGreaterThan(val, min);
         } else {
-            return productRepository.findProductsByPriceGreaterThanAndPriceLessThan(min, max);
+            return productRepository.searchAllByTitleContainingAndPriceGreaterThanAndPriceLessThan(val, min, max);
         }
     }
 }

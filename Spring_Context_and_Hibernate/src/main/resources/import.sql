@@ -8,7 +8,7 @@ INSERT INTO `users` VALUES (1,'user1'),(10,'user10'),(2,'user2'),(3,'user3'),(4,
 
 DROP TABLE IF EXISTS `products`;
 CREATE TABLE `products` (`id` bigint NOT NULL AUTO_INCREMENT, `price` double NOT NULL, `title` varchar(255) NOT NULL, PRIMARY KEY (`id`), UNIQUE KEY `UK_8xtpej5iy2w4cte2trlvrlayy` (`title`)) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
-INSERT INTO `products` VALUES (1,65.6,'Молоко'),(2,75.8,'Кефир'),(3,88.9,'Йогурт'),(4,49.9,'Хлеб'),(5,55.6,'Батон'),(6,244.9,'Огурцы'),(7,180,'Помидоры'),(8,139.99,'Бананы');
+INSERT INTO `products` VALUES (1,65.6,'РњРѕР»РѕРєРѕ'),(2,75.8,'РљРµС„РёСЂ'),(3,88.9,'Р™РѕРіСѓСЂС‚'),(4,49.9,'РҐР»РµР±'),(5,55.6,'Р‘Р°С‚РѕРЅ'),(6,244.9,'РћРіСѓСЂС†С‹'),(7,180,'РџРѕРјРёРґРѕСЂС‹'),(8,139.99,'Р‘Р°РЅР°РЅС‹');
 
 
 DROP TABLE IF EXISTS `buys`;

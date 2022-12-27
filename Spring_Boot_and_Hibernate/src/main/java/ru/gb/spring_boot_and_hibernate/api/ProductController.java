@@ -4,6 +4,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.server.ResponseStatusException;
+import ru.gb.spring_boot_and_hibernate.model.Customer;
 import ru.gb.spring_boot_and_hibernate.model.Product;
 import ru.gb.spring_boot_and_hibernate.service.ProductService;
 
@@ -31,10 +32,11 @@ public class ProductController {
         return productService.findAll();
     }
 
-    @GetMapping("/sort")
-    public List<Product> getAllSorted(@RequestParam(required = false, defaultValue = "0.0") Double min, @RequestParam(required = false, defaultValue = "-1.0") Double max){
-//    public List<Product> getAllSorted(@RequestParam(required = false) Double min, @RequestParam(required = false) Double max){
-        return productService.findAllSorted(min, max);
+    @PostMapping
+    public List<Product> upAll(@RequestParam(required = false, defaultValue = "") String val,
+                               @RequestParam(required = false, defaultValue = "0.0") Double min,
+                               @RequestParam(required = false, defaultValue = "-1.0") Double max){
+        return productService.findAllSorted(val, min, max);
     }
 
     @PostMapping("/add")

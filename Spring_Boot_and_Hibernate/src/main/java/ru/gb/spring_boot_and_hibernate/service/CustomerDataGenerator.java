@@ -43,7 +43,7 @@ public class CustomerDataGenerator {
         for (int i = 0; i < 20; i++) {
             Product product = new Product();
             product.setTitle("product_" + i);
-            product.setPrice(23.75 + (i * 17.99));
+            product.setPrice(264.75 + (i * 117.05));
             productRepository.save(product);
         }
     }

@@ -23,22 +23,22 @@ public class AppClass {
 
 
 
-        System.out.println("\n\nПокупки пользователя (по товарам) с датами и ценами id(id3)");
+        System.out.println("\n\nРџРѕРєСѓРїРєРё РїРѕР»СЊР·РѕРІР°С‚РµР»СЏ (РїРѕ С‚РѕРІР°СЂР°Рј) СЃ РґР°С‚Р°РјРё Рё С†РµРЅР°РјРё id(id3)");
         buyRepository.method1(3L).forEach(System.out::println);
 
 
 
-        System.out.println("\n\nЗаказы пользователя(id2)");
+        System.out.println("\n\nР—Р°РєР°Р·С‹ РїРѕР»СЊР·РѕРІР°С‚РµР»СЏ(id2)");
         buyRepository.method2(2L).forEach(System.out::println);
 
 
 
-        System.out.println("\n\nСписок покупателей купивших товар(id2)");
+        System.out.println("\n\nРЎРїРёСЃРѕРє РїРѕРєСѓРїР°С‚РµР»РµР№ РєСѓРїРёРІС€РёС… С‚РѕРІР°СЂ(id2)");
         buyRepository.method3(2L).forEach(System.out::println);
 
 
 
-        System.out.println("\n\nПользовательский рейтинг(по сумме затраченных средств)");
+        System.out.println("\n\nРџРѕР»СЊР·РѕРІР°С‚РµР»СЊСЃРєРёР№ СЂРµР№С‚РёРЅРі(РїРѕ СЃСѓРјРјРµ Р·Р°С‚СЂР°С‡РµРЅРЅС‹С… СЃСЂРµРґСЃС‚РІ)");
         buyRepository.method4().forEach(System.out::println);
 
     }
