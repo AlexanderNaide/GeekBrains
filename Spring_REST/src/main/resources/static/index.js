@@ -9,12 +9,13 @@ angular.module('app', []).controller('indexController', function ($scope, $http)
             url: contextPath,
             method: 'POST',
             params: {
-                val: val,
-                min: min,
-                max: max
+                val: $scope.value !== null ? $scope.value : null,
+                min: $scope.filter.min !== null ? $scope.filter.min : null,
+                max: $scope.filter.max !== null ? $scope.filter.max : null
             }
         }).then(function (response) {
-                $scope.ProductsList = response.data;
+                $scope.ProductsList = response.data.content;
+            console.log($scope.ProductsList)
             });
     };
 
@@ -23,8 +24,9 @@ angular.module('app', []).controller('indexController', function ($scope, $http)
             url: contextPath,
             method: 'GET'
         }).then(function (response) {
-                $scope.ProductsList = response.data;
-            });
+                $scope.ProductsList = response.data.content;
+                // console.log($scope.ProductsList)
+        });
     };
 
     $scope.searchForm = function () {
