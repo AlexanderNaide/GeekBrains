@@ -34,6 +34,11 @@
 
                 <h4>Фильтр</h4>
 
+                <select id="selectCat" class="form-control" style="margin-bottom: 30px">
+                    <option value=null selected>Все</option>
+                    <option ng-repeat="c in CategoriesList">{{c}}</option>
+                </select>
+
                 <label for="minPrice">Минимальная цена</label>
                 <input class="form-control" type="number" ng-model="filter.min" id="minPrice">
 
@@ -68,6 +73,7 @@
                 <tr>
                     <th>ID</th>
                     <th>Наименование</th>
+                    <th>Артикул</th>
                     <th>Цена</th>
 <!--                    <th>Функция</th>-->
                 </tr>
@@ -76,6 +82,7 @@
                 <tr ng-repeat="p in ProductsList">
                     <td>{{p.id}}</td>
                     <td>{{p.title}}</td>
+                    <td>{{p.article}}</td>
                     <td>{{p.price}}</td>
 <!--                    <td>
                         <button class="btn btn-danger" ng-click="deleteProduct(p.id)">Удалить</button>
@@ -84,9 +91,23 @@
                 </tbody>
             </table>
 
-            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModalCenter">
+            <nav aria-label="...">
+                <ul class="pagination">
+                    <li class="page-item {{first}}"><a class="page-link" ng-click="pageStart()">Первая</a></li>
+                    <li class="page-item {{first}}"><a class="page-link" ng-click="pageClick(-1)">Предыдущая</a></li>
+                    <li class="page-item"><a class="page-link">{{page1}}</a></li>
+<!--                    <li class="page-item"><a class="page-link" ng-click="pageClick(-1)">{{page2}}</a></li>-->
+<!--                    <li class="page-item"><a class="page-link" ng-click="pageClick(0)">{{page3}}</a></li>-->
+<!--                    <li class="page-item"><a class="page-link" ng-click="pageClick(+1)">{{page4}}</a></li>-->
+<!--                    <li class="page-item"><a class="page-link" ng-click="pageClick(+2)">{{page5}}</a></li>-->
+                    <li class="page-item {{last}}"><a class="page-link" ng-click="pageClick(+1)">Следующая</a></li>
+                    <li class="page-item {{last}}"><a class="page-link" ng-click="pageFinish()">Последняя</a></li>
+                </ul>
+            </nav>
+
+<!--            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModalCenter">
                 Добавить продукт
-            </button>
+            </button>-->
 
 
         </div>

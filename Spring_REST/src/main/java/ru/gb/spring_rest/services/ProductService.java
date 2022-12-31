@@ -6,9 +6,10 @@ import org.springframework.data.domain.PageRequest;
 import org.springframework.data.jpa.domain.Specification;
 import org.springframework.stereotype.Service;
 import ru.gb.spring_rest.model.Product;
-import ru.gb.spring_rest.model.ProductCom;
 import ru.gb.spring_rest.repository.ProductRepository;
 import ru.gb.spring_rest.repository.specifications.ProductSpecifications;
+
+import java.util.List;
 
 @Service
 public class ProductService {
@@ -57,19 +58,35 @@ public class ProductService {
 
 
 
-    public Page<Product> findCom(Double minPrice, Double maxPrice, String title, Integer page){
+    public Page<Product> findCom(Double minPrice, Double maxPrice, String title, String categories, Integer page){
+
+        System.out.println("Попали в сервис, на вход: min-" + minPrice + " max-" + maxPrice + " title-" + title + " page-" + page);
+
         Specification<Product> spec = Specification.where(null);
         if(minPrice != null){
-            spec = spec.and(ProductSpecifications.priceGreaterOrEqualsThanCom(minPrice));
+            System.out.println("Попали в фильтр min");
+//            spec = spec.and(ProductSpecifications.priceGreaterOrEqualsThanCom(minPrice));
+            spec = spec.and(ProductSpecifications.priceGreaterOrEqualsThan(minPrice));
         }
         if(maxPrice != null){
-            spec = spec.and(ProductSpecifications.priceLessenOrEqualsThanCom(maxPrice));
+            System.out.println("Попали в фильтр max");
+//            spec = spec.and(ProductSpecifications.priceLessenOrEqualsThanCom(maxPrice));
+            spec = spec.and(ProductSpecifications.priceLessenOrEqualsThan(maxPrice));
         }
         if(title != null){
-            spec = spec.and(ProductSpecifications.titleLikeCom(title));
+//            spec = spec.and(ProductSpecifications.titleLikeCom(title));
+            spec = spec.and(ProductSpecifications.titleLike(title));
+        }
+
+        if(categories != null){
+            spec = spec.and(ProductSpecifications.categories(categories));
         }
 //        return productRepository.findAll(spec, PageRequest.of(page - 1, 10, Sort.by(title)));
-        return productRepository.findCom(spec, PageRequest.of(page - 1, 10));
+//        Page<Product> p = productRepository.findCom(spec, PageRequest.of(page - 1, 10));
+        return productRepository.findAll(spec, PageRequest.of(page - 1, 10));
     }
 
+    public List<String> findAllCategories() {
+        return productRepository.findAllCategories();
+    }
 }
