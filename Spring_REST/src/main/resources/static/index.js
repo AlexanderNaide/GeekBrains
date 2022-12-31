@@ -33,7 +33,7 @@ angular.module('app', []).controller('indexController', function ($scope, $http)
             $scope.pagination(response);
             $scope.ProductsList = response.data.content;
             // console.log($scope.ProductsList)
-            // console.log(response.data);
+            console.log(response.data);
             });
     };
 
@@ -59,7 +59,20 @@ angular.module('app', []).controller('indexController', function ($scope, $http)
     };
 
     $scope.searchForm = function () {
+        number = 1;
         $scope.updateProducts();
+    };
+
+    $scope.catForm = function () {
+        $http({
+            url: contextPath + "/sub_categories",
+            method: 'POST',
+            params: {
+                cat: document.getElementById("selectCat").valueOf().value
+            }
+        }).then(function (response) {
+            $scope.SubCategoriesList = response.data;
+        });
     };
 
     $scope.addFilter = function () {
@@ -74,15 +87,12 @@ angular.module('app', []).controller('indexController', function ($scope, $http)
 
     $scope.pagination = function (response) {
         totalNumber = response.data.totalPages;
+        $scope.totalNumber = response.data.totalPages;
         $scope.first = response.data.first === true ? 'disabled' : null;
-        $scope.last = response.data.last === true ? 'disabled' : null;
-
+        $scope.first10 = response.data.number < 11 ? 'disabled' : null;
         $scope.page1 = response.data.number + 1;
-        // $scope.page2 = response.data.number + 2;
-        // $scope.page3 = response.data.number + 3;
-        // $scope.page4 = response.data.number + 4;
-        // $scope.page5 = response.data.number + 5;
-
+        $scope.last10 = response.data.number > totalNumber - 11 ? 'disabled' : null;
+        $scope.last = response.data.last === true ? 'disabled' : null;
     };
 
     $scope.pageClick = function (delta) {

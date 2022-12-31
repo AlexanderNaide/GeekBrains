@@ -60,6 +60,13 @@ public class ProductController {
         return productService.findAllCategories();
     }
 
+    @PostMapping("/sub_categories")
+    public List<String> getSubCategories(@RequestParam(required = false) String cat){
+//        List<String> s = productService.findAllCategories();
+//        s.forEach(System.out::println);
+        return productService.findAllSubCategories(cat);
+    }
+
 
 //    @PostMapping("/add")
 //    public void addProduct(@RequestBody Product product){

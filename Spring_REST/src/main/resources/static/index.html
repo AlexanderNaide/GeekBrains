@@ -39,6 +39,11 @@
                     <option ng-repeat="c in CategoriesList">{{c}}</option>
                 </select>
 
+                <select id="selectSubCat" class="form-control" style="margin-bottom: 30px">
+                    <option value=null selected>Все</option>
+                    <option ng-repeat="sc in SubCategoriesList">{{sc}}</option>
+                </select>
+
                 <label for="minPrice">Минимальная цена</label>
                 <input class="form-control" type="number" ng-model="filter.min" id="minPrice">
 
@@ -93,15 +98,13 @@
 
             <nav aria-label="...">
                 <ul class="pagination">
-                    <li class="page-item {{first}}"><a class="page-link" ng-click="pageStart()">Первая</a></li>
-                    <li class="page-item {{first}}"><a class="page-link" ng-click="pageClick(-1)">Предыдущая</a></li>
-                    <li class="page-item"><a class="page-link">{{page1}}</a></li>
-<!--                    <li class="page-item"><a class="page-link" ng-click="pageClick(-1)">{{page2}}</a></li>-->
-<!--                    <li class="page-item"><a class="page-link" ng-click="pageClick(0)">{{page3}}</a></li>-->
-<!--                    <li class="page-item"><a class="page-link" ng-click="pageClick(+1)">{{page4}}</a></li>-->
-<!--                    <li class="page-item"><a class="page-link" ng-click="pageClick(+2)">{{page5}}</a></li>-->
-                    <li class="page-item {{last}}"><a class="page-link" ng-click="pageClick(+1)">Следующая</a></li>
-                    <li class="page-item {{last}}"><a class="page-link" ng-click="pageFinish()">Последняя</a></li>
+                    <li class="page-item {{first}}"><a class="page-link" ng-click="pageStart()">1</a></li>
+                    <li class="page-item {{first10}}"><a class="page-link" ng-click="pageClick(-10)">-10</a></li>
+                    <li class="page-item {{first}}"><a class="page-link" ng-click="pageClick(-1)">-1</a></li>
+                    <li class="page-item active"><a class="page-link">{{page1}}</a></li>
+                    <li class="page-item {{last}}"><a class="page-link" ng-click="pageClick(+1)">+1</a></li>
+                    <li class="page-item {{last10}}"><a class="page-link" ng-click="pageClick(+10)">+10</a></li>
+                    <li class="page-item {{last}}"><a class="page-link" ng-click="pageFinish()">{{totalNumber}}</a></li>
                 </ul>
             </nav>
 

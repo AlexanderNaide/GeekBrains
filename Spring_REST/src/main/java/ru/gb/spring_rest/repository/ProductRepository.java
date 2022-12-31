@@ -45,4 +45,8 @@ public interface ProductRepository extends JpaRepository<Product, Long>, JpaSpec
     @Query("select p.subCategory1 from Product p group by p.subCategory1")
     List<String> findAllCategories();
 
+    @Modifying
+    @Query("select p.subCategory2 from Product p where p.subCategory1 = ?1 group by p.subCategory2")
+    List<String> findAllSubCategories(String cat);
+
 }
