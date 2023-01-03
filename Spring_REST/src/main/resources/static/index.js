@@ -55,6 +55,8 @@ angular.module('app', []).controller('indexController', function ($scope, $http)
             method: 'GET'
         }).then(function (response) {
             $scope.CategoriesList = response.data;
+
+            console.log($scope.CategoriesList)
         });
     };
 

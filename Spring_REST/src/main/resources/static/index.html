@@ -34,9 +34,16 @@
 
                 <h4>Фильтр</h4>
 
-                <select id="selectCat" class="form-control" style="margin-bottom: 30px">
+<!--                <select ng-change="catForm()" id="selectCat" class="form-control" style="margin-bottom: 30px">-->
+<!--                    <option value=null selected>Все</option>-->
+<!--                    <option ng-repeat="c in CategoriesList">{{c}}</option>-->
+<!--                </select>-->
+<!--                ng-model="userselected"-->
+
+                <select name="cat" ng-options="cat for cat in CategoriesList" ng-change="catForm()" ng-model="userselected" class="form-control" style="margin-bottom: 30px">
+
                     <option value=null selected>Все</option>
-                    <option ng-repeat="c in CategoriesList">{{c}}</option>
+
                 </select>
 
                 <select id="selectSubCat" class="form-control" style="margin-bottom: 30px">
