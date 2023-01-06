@@ -24,44 +24,45 @@
 <div class="container" ng-controller="indexController">
 
     <div class="row align-items-start" style="height: 140px; padding: 30px;">
-            <h1>GeekBrains   HomeWork 8</h1>
+            <h1>GeekBrains   HomeWork 9 (Spring REST)</h1>
     </div>
 
     <div class="row align-items-start">
         <div class="col-3">
 
+            <h4>Фильтр</h4>
+
             <form id="formFilter" novalidate ng-submit="addFilter()">
 
-                <h4>Фильтр</h4>
+                <label> Категория
+                    <select name="cat" ng-options="cat for cat in CategoriesList" ng-change="catForm()" ng-model="filter.cat" class="form-control" style="margin-bottom: 30px">
+                        <option value="">Все</option>
+                    </select>
+                </label>
 
-<!--                <select ng-change="catForm()" id="selectCat" class="form-control" style="margin-bottom: 30px">-->
-<!--                    <option value=null selected>Все</option>-->
-<!--                    <option ng-repeat="c in CategoriesList">{{c}}</option>-->
-<!--                </select>-->
-<!--                ng-model="userselected"-->
 
-                <select name="cat" ng-options="cat for cat in CategoriesList" ng-change="catForm()" ng-model="userselected" class="form-control" style="margin-bottom: 30px">
+                <label> Подкатегория
+                    <select id="sub" name="sub_cat" ng-options="sub_cat for sub_cat in SubCategoriesList" ng-change="manufacturer()" ng-model="filter.sub_cat" class="form-control" style="margin-bottom: 30px">
+                        <option value="">Все</option>
+                    </select>
+                </label>
 
-                    <option value=null selected>Все</option>
+                <label> Производитель
+                    <select name="man" ng-options="man for man in ManufacturerList" ng-model="filter.man" class="form-control" style="margin-bottom: 30px">
+                        <option value="">Все</option>
+                    </select>
+                </label>
 
-                </select>
-
-                <select id="selectSubCat" class="form-control" style="margin-bottom: 30px">
-                    <option value=null selected>Все</option>
-                    <option ng-repeat="sc in SubCategoriesList">{{sc}}</option>
-                </select>
-
-                <label for="minPrice">Минимальная цена</label>
+                <label>Минимальная цена
                 <input class="form-control" type="number" ng-model="filter.min" id="minPrice">
+                </label>
 
-
-                <label for="maxPrice">Максимальная цена</label>
+                <label>Максимальная цена
                 <input class="form-control" type="number" ng-model="filter.max" id="maxPrice" style="margin-bottom: 30px">
-
+                </label>
 
                 <button type="button" class="btn btn-secondary" ng-click="resetFilter()">Сбросить</button>
                 <button class="btn btn-success" type="submit">Применить</button>
-
 
             </form>
 
@@ -87,18 +88,14 @@
                     <th>Наименование</th>
                     <th>Артикул</th>
                     <th>Цена</th>
-<!--                    <th>Функция</th>-->
                 </tr>
                 </thead>
                 <tbody>
-                <tr ng-repeat="p in ProductsList">
+                <tr ng-repeat="p in ProductsList" ng-click="getProduct(p.id)" data-bs-toggle="modal" data-bs-target="#exampleModalCenter">
                     <td>{{p.id}}</td>
                     <td>{{p.title}}</td>
                     <td>{{p.article}}</td>
                     <td>{{p.price}}</td>
-<!--                    <td>
-                        <button class="btn btn-danger" ng-click="deleteProduct(p.id)">Удалить</button>
-                    </td>-->
                 </tr>
                 </tbody>
             </table>
@@ -114,53 +111,43 @@
                     <li class="page-item {{last}}"><a class="page-link" ng-click="pageFinish()">{{totalNumber}}</a></li>
                 </ul>
             </nav>
-
-<!--            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModalCenter">
-                Добавить продукт
-            </button>-->
-
-
         </div>
     </div>
-
-
-
 
 
     <div class="modal fade" id="exampleModalCenter" tabindex="-1" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
-                <form id="form" novalidate ng-submit="addProduct()">
+                <form id="form" novalidate>
 
                     <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalCenterTitle">Добавить продукт</h5>
+                        <label class="modal-title" id="exampleModalCenterTitle">Информация о товаре</label>
                     </div>
 
                     <div class="modal-body">
                         <div class="form-group mb-3">
-                            <label for="newProductTitle">Наименование</label>
-                            <input class="form-control" type="text" ng-model="newProduct.title" id="newProductTitle">
+                            <h5 class="modal-title">{{Product.title}}</h5>
+                            <label>Артикул: {{Product.article}}</label>
+                            <h6>Цена: {{Product.price}}руб.</h6>
+                            <label>Производитель: {{Product.manufacturer}}</label>
                         </div>
+
                         <div class="form-group mb-3">
-                            <label for="newProductCost">Цена</label>
-                            <input class="form-control" type="number" ng-model="newProduct.price" id="newProductCost">
+                            <h6>Описание:</h6>
+                            <div ng-repeat="l in ProductDescription">{{l}} <br></div>
+
                         </div>
+
                     </div>
 
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
-                        <button class="btn btn-success" type="submit">Сохранить</button>
                     </div>
 
                 </form>
             </div>
         </div>
     </div>
-
-    </div>
-
-
-
 
 </div>
 
