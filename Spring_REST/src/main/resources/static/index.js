@@ -14,9 +14,9 @@ angular.module('app', []).controller('indexController', function ($scope, $http)
             bF = true;
             min = $scope.filter.min !== null ? $scope.filter.min : null;
             max = $scope.filter.max !== null ? $scope.filter.max : null;
-            cat = $scope.filter.cat !== "Все" ? $scope.filter.cat : null;
-            sub_cat = $scope.filter.sub_cat !== "Все" ? $scope.filter.sub_cat : null;
-            man = $scope.filter.man !== "Все" ? $scope.filter.man : null;
+            cat = $scope.filter.cat !== "Р’СЃРµ" ? $scope.filter.cat : null;
+            sub_cat = $scope.filter.sub_cat !== "Р’СЃРµ" ? $scope.filter.sub_cat : null;
+            man = $scope.filter.man !== "Р’СЃРµ" ? $scope.filter.man : null;
         }
         $http({
             url: contextPath,
@@ -76,8 +76,8 @@ angular.module('app', []).controller('indexController', function ($scope, $http)
         let cat;
         let sub_cat;
         if ($scope.filter !== null){
-            cat = $scope.filter.cat !== "Все" ? $scope.filter.cat : null;
-            sub_cat = $scope.filter.sub_cat !== "Все" ? $scope.filter.sub_cat : null;
+            cat = $scope.filter.cat !== "Р’СЃРµ" ? $scope.filter.cat : null;
+            sub_cat = $scope.filter.sub_cat !== "Р’СЃРµ" ? $scope.filter.sub_cat : null;
         }
         $http({
             url: contextPath + "/man",
