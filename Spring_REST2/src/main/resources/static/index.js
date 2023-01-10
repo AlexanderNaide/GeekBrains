@@ -1,5 +1,5 @@
 angular.module('app', []).controller('indexController', function ($scope, $http) {
-    const contextPath = 'http://localhost:8080/products';
+    const contextPath = 'http://localhost:8080/api/v1/products';
     let number = 1;
     let totalNumber;
 
@@ -33,6 +33,7 @@ angular.module('app', []).controller('indexController', function ($scope, $http)
         }).then(function (response) {
             $scope.pagination(response);
             $scope.ProductsList = response.data.content;
+            console.log(response.data)
             });
     };
 
@@ -43,6 +44,7 @@ angular.module('app', []).controller('indexController', function ($scope, $http)
         }).then(function (response) {
             $scope.pagination(response);
             $scope.ProductsList = response.data.content;
+            console.log(response.data)
         });
     };
 
@@ -60,6 +62,7 @@ angular.module('app', []).controller('indexController', function ($scope, $http)
             url: contextPath + "/" + id,
             method: 'GET'
         }).then(function (response) {
+            console.log(response);
             $scope.Product = response.data;
             let descStr = response.data.description;
             let st = descStr.indexOf("<");
@@ -81,7 +84,7 @@ angular.module('app', []).controller('indexController', function ($scope, $http)
         }
         $http({
             url: contextPath + "/man",
-            method: 'POST',
+            method: 'GET',
             params: {
                 cat: cat,
                 sub_cat: sub_cat
@@ -102,7 +105,7 @@ angular.module('app', []).controller('indexController', function ($scope, $http)
             $('#sub').prop('disabled', false);
             $http({
                 url: contextPath + "/sub_categories",
-                method: 'POST',
+                method: 'GET',
                 params: {
                     cat: $scope.filter.cat
                 }
