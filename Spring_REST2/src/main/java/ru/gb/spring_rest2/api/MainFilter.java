@@ -1,4 +1,4 @@
-package ru.gb.spring_rest.api;
+package ru.gb.spring_rest2.api;
 
 import jakarta.servlet.FilterChain;
 import jakarta.servlet.ServletException;

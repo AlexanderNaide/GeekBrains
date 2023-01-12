@@ -1,8 +1,12 @@
-package ru.gb.spring_rest.model;
+package ru.gb.spring_rest2.model;
 
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 @Data
+@NoArgsConstructor //конструктор без аргументов для Джексона
+@AllArgsConstructor //конструктор со всеми аргументами
 public class ProductFullDto {
 
     private Long id;
@@ -21,7 +25,7 @@ public class ProductFullDto {
 
     private String description;
 
-    public ProductFullDto(Product product) {
+/*    public ProductFullDto(Product product) {
         this.id = product.getId();
         this.subCategory1 = product.getSubCategory1();
         this.subCategory2 = product.getSubCategory2();
@@ -30,5 +34,5 @@ public class ProductFullDto {
         this.price = product.getPrice();
         this.manufacturer = product.getManufacturer();
         this.description = product.getDescription();
-    }
+    }*/
 }

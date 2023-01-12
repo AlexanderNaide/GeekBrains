@@ -1,26 +1,21 @@
-package ru.gb.spring_rest.services;
+package ru.gb.spring_rest2.services;
 
-import org.springframework.beans.factory.annotation.Autowired;
+import lombok.RequiredArgsConstructor;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.jpa.domain.Specification;
 import org.springframework.stereotype.Service;
-import ru.gb.spring_rest.model.Product;
-import ru.gb.spring_rest.repository.ProductRepository;
-import ru.gb.spring_rest.repository.specifications.ProductSpecifications;
+import ru.gb.spring_rest2.model.Product;
+import ru.gb.spring_rest2.repository.ProductRepository;
+import ru.gb.spring_rest2.repository.specifications.ProductSpecifications;
 
 import java.util.List;
 import java.util.Optional;
 
 @Service
+@RequiredArgsConstructor // Ломбоковская аннотация, которая инициализирует final поля вместо конструктора с @Autowired
 public class ProductService {
-    private ProductRepository productRepository;
-
-    @Autowired
-    public void setCategoryRepository(ProductRepository productRepository) {
-        this.productRepository = productRepository;
-    }
-
+    private final ProductRepository productRepository;
 
     public Page<Product> findCom(Double minPrice, Double maxPrice, String title, String categories, String subCategories, String man, Integer page){
 

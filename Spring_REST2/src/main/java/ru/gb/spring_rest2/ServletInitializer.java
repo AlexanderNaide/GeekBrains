@@ -1,4 +1,4 @@
-package ru.gb.spring_rest;
+package ru.gb.spring_rest2;
 
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;

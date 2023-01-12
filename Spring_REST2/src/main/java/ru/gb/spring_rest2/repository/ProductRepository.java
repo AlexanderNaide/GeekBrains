@@ -1,11 +1,11 @@
-package ru.gb.spring_rest.repository;
+package ru.gb.spring_rest2.repository;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.JpaSpecificationExecutor;
 import org.springframework.data.jpa.repository.Modifying;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;
-import ru.gb.spring_rest.model.Product;
+import ru.gb.spring_rest2.model.Product;
 
 import java.util.List;
 
