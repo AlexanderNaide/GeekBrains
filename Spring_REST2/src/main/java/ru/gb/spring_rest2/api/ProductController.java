@@ -10,9 +10,14 @@ import ru.gb.spring_rest2.exceptions.ResourceNotFoundException;
 import ru.gb.spring_rest2.model.Product;
 import ru.gb.spring_rest2.model.ProductDto;
 import ru.gb.spring_rest2.model.ProductFullDto;
+import ru.gb.spring_rest2.model.ProductToCartDto;
+import ru.gb.spring_rest2.services.CartService;
 import ru.gb.spring_rest2.services.ProductService;
 
+import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
+import java.util.stream.Collectors;
 
 @RestController
 @RequiredArgsConstructor // Ломбоковская аннотация, которая инициализирует final поля вместо конструктора с @Autowired
@@ -21,6 +26,8 @@ public class ProductController {
 
     private final ProductService productService;
     private final ProductConverter productConverter;
+
+    private final CartService cartService;
 
     @GetMapping("/{id}")
     public ProductFullDto getProductById(@PathVariable Long id){
@@ -66,5 +73,23 @@ public class ProductController {
             @RequestParam(required = false) String sub_cat
     ){
         return productService.findManufacturer(cat, sub_cat);
+    }
+
+    @PostMapping("/add_to_cart")
+    public void addToCart(@RequestParam Long id, @RequestParam(required = false, defaultValue = "1") Integer count){
+        cartService.addProduct(id, count);
+    }
+
+    @PostMapping("/dell_from_cart")
+    public void dellFromCart(@RequestParam Long id){
+        cartService.dellProduct(id);
+    }
+
+    @GetMapping("/cart")
+    public List<ProductToCartDto> getMapCart(){
+//        return cartService.getMapCart().entrySet().stream().collect(Collectors.toList((entry) -> productConverter.entityToDto(entry.getKey()), Map.Entry::getValue));
+        return cartService.getMapCart().entrySet().stream()
+                .map(entry -> productConverter.entityToCardDto(entry.getKey(), entry.getValue()))
+                .collect(Collectors.toList());
     }
 }
