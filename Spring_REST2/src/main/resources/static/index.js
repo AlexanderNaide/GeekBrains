@@ -114,19 +114,6 @@ angular.module('app', []).controller('indexController', function ($scope, $http)
         });
     };
 
-    $scope.setCountProductToCart = function (id, count) {
-        $http({
-            url: contextPath + "/add_to_cart",
-            method: 'POST',
-            params: {
-                id: id,
-                count: count
-            }
-        }).then(function (response) {
-            $scope.showCart();
-        });
-    };
-
     $scope.addToCart = function (id, count) {
         $http({
             url: contextPath + "/add_to_cart",
