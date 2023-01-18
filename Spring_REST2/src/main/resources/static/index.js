@@ -33,7 +33,7 @@ angular.module('app', []).controller('indexController', function ($scope, $http)
         }).then(function (response) {
             $scope.pagination(response);
             $scope.ProductsList = response.data.content;
-            console.log(response.data)
+            // console.log(response.data)
             });
     };
 
@@ -44,7 +44,7 @@ angular.module('app', []).controller('indexController', function ($scope, $http)
         }).then(function (response) {
             $scope.pagination(response);
             $scope.ProductsList = response.data.content;
-            console.log(response.data)
+            // console.log(response.data)
         });
     };
 
@@ -62,7 +62,7 @@ angular.module('app', []).controller('indexController', function ($scope, $http)
             url: contextPath + "/" + id,
             method: 'GET'
         }).then(function (response) {
-            console.log(response);
+            // console.log(response);
             $scope.Product = response.data;
             let descStr = response.data.description;
             let st = descStr.indexOf("<");
@@ -91,6 +91,51 @@ angular.module('app', []).controller('indexController', function ($scope, $http)
             }
         }).then(function (response) {
             $scope.ManufacturerList = response.data;
+        });
+    };
+
+    $scope.showCart = function () {
+        $http({
+            url: contextPath + "/cart",
+            method: 'GET'
+        }).then(function (response) {
+            $scope.CardList = response.data;
+            $scope.CardTotalSize = $scope.CardList.length;
+            let total = 0;
+            let summ = 0;
+            for (let p of $scope.CardList) {
+                let count = p.count;
+                let price = p.price;
+                total += count;
+                summ += (count * price);
+            }
+            $scope.CardTotalProduct = total;
+            $scope.CardTotalSumm = summ;
+        });
+    };
+
+    $scope.addToCart = function (id, count) {
+        $http({
+            url: contextPath + "/add_to_cart",
+            method: 'POST',
+            params: {
+                id: id,
+                count: count
+            }
+        }).then(function (response) {
+            $scope.showCart();
+        });
+    };
+
+    $scope.deleteProductFromCart = function (id) {
+        $http({
+            url: contextPath + "/dell_from_cart",
+            method: 'POST',
+            params: {
+                id: id
+            }
+        }).then(function (response) {
+            $scope.showCart();
         });
     };
 
@@ -165,6 +210,7 @@ angular.module('app', []).controller('indexController', function ($scope, $http)
     $scope.loadProducts();
     $scope.categories();
     $scope.manufacturer();
+    $scope.showCart();
     $('#sub').prop( 'disabled',true );
 
 });
